@@ -45,30 +45,31 @@
     <h1>Data Profiling Links</h1>
     <h2>Local Database transformation into OMOP-CDM</h2>
     <h2>HM Hospitales</h2>
-    <p>This page provides links to various data profiling reports from HM Hospitales' local database. The primary objective of these data profiling reports is to offer a comprehensive overview of the data that will undergo transformation through ETL (Extract, Transform, Load) pipelines into the OMOP Common Data Model (CDM) format.
+    <p>These reports include a wide array of information vital for understanding the data's structure and content. Detailed within these reports are:</p>
 
-        These reports include a wide array of information vital for understanding the data's structure and content. Detailed within these reports are:
-        
-        - **Dataset Statistics**: Summarized statistics that give a snapshot of each dataset's size, number of records, and overall data quality.
-        - **Value Distributions**: Detailed distributions of values within each dataset, highlighting common and rare occurrences.
-        - **Missing Data Analysis**: Identification and quantification of missing values, which is crucial for assessing 
-        data completeness and reliability.
-        - **Memory Usage**: Analysis of the memory footprint of each dataset, providing insights into storage and processing requirements.
-        - **Patient Demographics**: Comprehensive breakdowns of patient information, including age, gender, and other relevant demographic details.
-        - **Types of Visits**: Classification and frequency of various visit types (e.g., inpatient, outpatient), including their most frequent entry and discharge types.
-        - **Frequencies of Conditions**: Analysis of condition prevalence, detailing the most common and rare conditions observed in the dataset.
-        - **Frequencies of Procedures**: Detailed examination of procedures, including their frequency and types.
-        - **Frequencies of Treatments**: Insight into treatment data, highlighting common treatments administered by medical personnel.
-        
-        These detailed insights are critical for the efficient exploration and analysis of the data, ensuring a thorough understanding before it is transformed into standardized concepts using the OMOP-CDM guidelines.
-        
-        Please click on a link to view the data profile for the respective table or combination of tables.</p>
+<ul>
+    <li><strong>Dataset Statistics</strong>: Summarized statistics that give a snapshot of each dataset's size, number of records, and overall data quality.</li>
+    <li><strong>Value Distributions</strong>: Detailed distributions of values within each dataset, highlighting common and rare occurrences.</li>
+    <li><strong>Missing Data Analysis</strong>: Identification and quantification of missing values, which is crucial for assessing data completeness and reliability.</li>
+    <li><strong>Memory Usage</strong>: Analysis of the memory footprint of each dataset, providing insights into storage and processing requirements.</li>
+    <li><strong>Patient Demographics</strong>: Comprehensive breakdowns of patient information, including age, gender, and other relevant demographic details.</li>
+    <li><strong>Types of Visits</strong>: Classification and frequency of various visit types (e.g., inpatient, outpatient), including their most frequent entry and discharge types.</li>
+    <li><strong>Frequencies of Conditions</strong>: Analysis of condition prevalence, detailing the most common and rare conditions observed in the dataset.</li>
+    <li><strong>Frequencies of Procedures</strong>: Detailed examination of procedures, including their frequency and types.</li>
+    <li><strong>Frequencies of Treatments</strong>: Insight into treatment data, highlighting common treatments administered by medical personnel.</li>
+</ul>
+
+<p>These detailed insights are critical for the efficient exploration and analysis of the data, ensuring a thorough understanding before it is transformed into standardized concepts using the OMOP-CDM guidelines.</p>
+
+<p>Please click on a link to view the data profile for the respective table or combination of tables.</p>
+
     <ul>
         <li>
             <a href="patients_data_profile.html">Patient Table</a>
+            <span class="comment">Only patients with a clinical episode with available ICD10 codes where included in this report</span>
 
             <a href= "visits_data_profile.html"> Inpatient & Outpatient Tables</a>
-            <span class="comment">- Only visits with available ICD10 codes where included in this report</span>
+            <span class="comment">Only visits with available ICD10 codes where included in this report</span>
 
             <a href= "conditions_icd10_codes_profile.html"> ICD10 Codes for Conditions derived from Inpatient & Outpatient Tables</a>
 
