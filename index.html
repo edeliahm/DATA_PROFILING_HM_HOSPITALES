@@ -43,7 +43,24 @@
             font-size: 0.7em; /* Smaller font size for the comment */
             margin-top: 5px; /* Space between the link and the comment */
             margin-bottom: 15px; /* Space between the comment and the next link */
+        } 
+        .container {
+            position: relative; /* Establish relative positioning context */
+            width: 100%; /* Assuming full width */
+            height: 100vh; /* Example height; adjust as needed */
+            overflow: hidden; /* Hide overflow to prevent scrollbars */
         }
+
+        .container img {
+            position: absolute; /* Position absolutely within the container */
+            top: 10px; /* Adjust top distance */
+            right: 10px; /* Adjust right distance */
+            max-width: 200px; /* Example max width */
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid #ccc; /* Example border */
+            border-radius: 5px; /* Example border radius */
+        }
+        
     </style>
 </head>
 <body>
@@ -59,7 +76,7 @@
     <li><strong>Memory Usage</strong>: Analysis of the memory footprint of each dataset, providing insights into storage and processing requirements.</li>
     <li><strong>Patient Demographics</strong>: Comprehensive breakdowns of patient information, including age, gender, and other relevant demographic details.</li>
     <li><strong>Types of Visits</strong>: Classification and frequency of various visit types (e.g., inpatient, outpatient), including their most frequent entry and discharge types.</li>
-    <li><strong>Frequencies of Conditions</strong>: Analysis of condition prevalence, detailing the most common and rare conditions observed in the dataset.</li>
+    <li><strong>Frequencies of Conditions</strong>: Analysis of condition prevalence.</li>
     <li><strong>Frequencies of Procedures</strong>: Detailed examination of procedures, including their frequency and types.</li>
     <li><strong>Frequencies of Treatments</strong>: Insight into treatment data, highlighting common treatments administered by medical personnel.</li>
 </ul>
