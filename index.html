@@ -48,15 +48,25 @@
     <p>These reports include a wide array of information vital for understanding the data's structure and content. Detailed within these reports are:</p>
 
 <ul>
-    <li><strong>Dataset Statistics</strong>: Summarized statistics that give a snapshot of each dataset's size, number of records, and overall data quality.</li>
-    <li><strong>Value Distributions</strong>: Detailed distributions of values within each dataset, highlighting common and rare occurrences.</li>
-    <li><strong>Missing Data Analysis</strong>: Identification and quantification of missing values, which is crucial for assessing data completeness and reliability.</li>
-    <li><strong>Memory Usage</strong>: Analysis of the memory footprint of each dataset, providing insights into storage and processing requirements.</li>
-    <li><strong>Patient Demographics</strong>: Comprehensive breakdowns of patient information, including age, gender, and other relevant demographic details.</li>
-    <li><strong>Types of Visits</strong>: Classification and frequency of various visit types (e.g., inpatient, outpatient), including their most frequent entry and discharge types.</li>
-    <li><strong>Frequencies of Conditions</strong>: Analysis of condition prevalence.</li>
-    <li><strong>Frequencies of Procedures</strong>: Detailed examination of procedures, including their frequency and types.</li>
-    <li><strong>Frequencies of Treatments</strong>: Insight into treatment data, highlighting common treatments administered by medical personnel.</li>
+    <li><strong>Dataset Statistics</strong>: 
+        Summarized statistics that give a snapshot of each dataset's size, number of records, and overall figures related data quality.</li>
+    <li><strong>Value Distributions</strong>: 
+        Detailed distributions of values within each dataset, highlighting common and rare occurrences.</li>
+    <li><strong>Missing Data Analysis</strong>: 
+        Identification and quantification of missing values, which is crucial for assessing data completeness and reliability.</li>
+    <li><strong>Memory Usage</strong>: 
+        Analysis of the memory footprint of each dataset, providing insights into storage and processing requirements.</li>
+    <li><strong>Patient Demographics</strong>: 
+        Comprehensive breakdowns of patient information, including date of birth and gender.</li>
+    <li><strong>Types of Visits</strong>: 
+        Classification and frequency of various visit types (e.g., inpatient, outpatient), including their most frequent entry and discharge types.</li>
+    <li><strong>Frequencies of Conditions</strong>: 
+        Analysis of medical condition prevalence.</li>
+    <li><strong>Frequencies of Procedures</strong>:
+         Detailed examination of instances of medical procedures that take place within our facilities.
+        </li>
+    <li><strong>Frequencies of Treatments</strong>: 
+        Insight into treatments administered by medical personnel within our facilities, highlighting distinct treatments and their overall frequency in medical visits.</li>
 </ul>
 
 <p>These detailed insights are critical for the efficient exploration and analysis of the data, ensuring a thorough understanding before it is transformed into standardized concepts using the OMOP-CDM guidelines.</p>
@@ -66,14 +76,16 @@
     <ul>
         <li>
             <a href="patients_data_profile.html">Patient Table</a>
-            <span class="comment">Only patients with a clinical episode with available ICD10 codes where included in this report</span>
+            <span class="comment">Only patients with clinical episodes with available ICD10 codes where included in this report</span>
 
             <a href= "visits_data_profile.html"> Inpatient & Outpatient Tables</a>
             <span class="comment">Only visits with available ICD10 codes where included in this report</span>
 
-            <a href= "conditions_icd10_codes_profile.html"> ICD10 Codes for Conditions derived from Inpatient & Outpatient Tables</a>
+            <a href= "conditions_icd10_codes_profile.html"> Medical Conditions derived from Inpatient & Outpatient Tables</a>
+            <span class="comment">Conditions extracted per IP and OP visits. Only ICD10 codes are displayed in the report</span>
 
-            <a href= "procedures_icd10_codes_profile.html"> ICD10 Codes for Procedures derived from Inpatient & Outpatient Tables</a>
+            <a href= "procedures_icd10_codes_profile.html"> Medical Procedures derived from Inpatient & Outpatient Tables</a>
+            <span class="comment">Instances of medical procedures were extracted per IP and OP visits. Only ICD10 codes are displayed in the report</span>
 
             <a href= "treatments_profile.html"> Administered Treatments by Medical Personnel derived from Inpatient & Outpatient Tables</a>
             
