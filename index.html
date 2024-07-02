@@ -29,6 +29,12 @@
         a:hover {
             text-decoration: underline;
         }
+        .comment {
+            display: block;
+            font-style: italic;
+            color: grey;
+            margin-top: 5px; /* Space between the link and the comment */
+        }
     </style>
 </head>
 <body>
@@ -36,7 +42,7 @@
     <h2>Local Database transformation into OMOP-CDM</h2>
     <h2>HM Hospitales</h2>
     <p>This page provides links to various data profiling reports from HM Hospitales' local database. 
-        The main focus of this compilations of reports is to have a broad understanding of the nature of the 
+        The main focus of this compilation of data profiling reports is to have a broad understanding of the nature of the 
         data we are dealing with and that is subject to transformation into standard concepts using the OMOP-CDM guidelines. 
 
         These reports includes various pieces of information such as dataset statistics, distribution of values, missing values,
@@ -47,7 +53,16 @@
     <ul>
         <li>
             <a href="patients_data_profile.html">Patient Table</a>
+
+            <a href= "visits_data_profile.html"> Inpatient & Outpatient Tables</a>
             <span class="comment">- Only visits with available ICD10 codes where included in this report</span>
+
+            <a href= "conditions_icd10_codes_profile.html"> ICD10 Codes for Conditions derived from Inpatient & Outpatient Tables</a>
+
+            <a href= "procedures_icd10_codes_profile.html"> ICD10 Codes for Procedures derived from Inpatient & Outpatient Tables</a>
+
+            <a href= "treatments_profile.html"> Administered Treatments by Medical Personnel derived from Inpatient & Outpatient Tables</a>
+            
         </li>
         <!-- Add more links as needed -->
     </ul>
